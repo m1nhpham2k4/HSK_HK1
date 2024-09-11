@@ -1,0 +1,23 @@
+package bai1;
+
+import java.util.ArrayList;
+
+public class DanhSachNhanVien {
+	public ArrayList<ThongTinNhanVien> ds;
+	
+	
+	public DanhSachNhanVien(ArrayList<ThongTinNhanVien> dsPhong) {
+		dsPhong = new ArrayList<ThongTinNhanVien>();
+	}
+	
+	public boolean them(ThongTinNhanVien ttnv) {
+		if(!this.ds.contains(ttnv)) {
+			this.ds.add(ttnv);
+			return true;
+		}
+		return false;
+	}
+	
+	public 
+
+}

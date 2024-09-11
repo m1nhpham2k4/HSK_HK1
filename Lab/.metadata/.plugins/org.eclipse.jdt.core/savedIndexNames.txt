@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+D:\HK1 2024 2025\HSK\Lab\.metadata\.plugins\org.eclipse.jdt.core
+581940513.index
+1865797976.index
+3332962069.index
+1329205445.index
+2987396801.index

@@ -1,0 +1,111 @@
+package bai1;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class processing extends JFrame implements ActionListener{
+
+	JLabel ltd, lmnv,lho,ltnv,ltuoi,lphai,ltien,lnhap;
+	JTextField tmnv, tho, ttnv, ttuoi,ttien,tnhap;
+	JRadioButton nu;
+	JButton tim, them, xoa,xoatrang,luu;
+	JPanel pNorth, pSouth,pCenter;
+	Box box, box1,box2,box3,box4,box5;
+	
+	
+	public processing() {
+
+		
+		ltd = new JLabel("THÔNG TIN NHÂN VIÊN");
+		Font f = new Font(Font.SERIF, Font.BOLD, 20);
+		ltd.setForeground(Color.blue);
+		ltd.setFont(f);
+		pNorth = new JPanel();
+		pNorth.add(ltd);
+		add(pNorth, BorderLayout.NORTH);
+		
+		pCenter = new JPanel();
+		lmnv = new JLabel("Mã nhân viên");
+		lho = new JLabel("Họ");
+		ltnv = new JLabel("Tên nhân viên");
+		ltuoi = new JLabel("Tuổi");
+		lphai = new JLabel("Phái");
+		ltien = new JLabel("Tiền lương");
+		
+		tmnv = new JTextField(30);
+		ttnv = new JTextField(10);
+		tho = new JTextField(15);
+		ttuoi = new JTextField(18);
+		ttien = new JTextField(30);
+		nu = new JRadioButton("Nữ");
+		
+		box1 = new Box(BoxLayout.X_AXIS);
+		box1.add(lmnv);
+		box1.add(Box.createHorizontalStrut(5));
+		box1.add(tmnv);
+		
+		box2 = new Box(BoxLayout.X_AXIS);
+		box2.add(lho);
+		box2.add(tho);
+		box2.add(ltnv);
+		box2.add(ttnv);
+		
+		box3 = new Box(BoxLayout.X_AXIS);
+		box3.add(ltuoi);
+		box3.add(ttuoi);
+		box3.add(lphai);
+		box3.add(nu);
+		
+		
+		box4 = new Box(BoxLayout.X_AXIS);
+		box4.add(ltien);
+		box4.add(ttien);
+		
+		box = new Box(BoxLayout.Y_AXIS);
+		box.add(box1);
+		box.add(box2);
+		box.add(box3);
+		box.add(box4);
+		
+		pCenter.add(box);
+		add(pCenter, BorderLayout.CENTER);
+		
+		
+		
+		
+		setSize(600,600);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		new processing();
+	}
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

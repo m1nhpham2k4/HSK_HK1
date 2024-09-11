@@ -1,0 +1,7 @@
+package Bai1_tuan3;
+
+public class main {
+	public static void main(String[] args) {
+		new processing();
+	}
+}

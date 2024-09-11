@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><dshoadon>
+	<hoadon id="123">
+		<nguoilap>Lê Thanh Hưng</nguoilap>
+		<congty>Đông Nam</congty>
+		<mota>Hàng điện máy</mota>
+		<soluong>60</soluong>
+		
+	</hoadon>
+	<hoadon id="574">
+		<nguoilap>Hoàng Minh Hòa</nguoilap>
+		<congty>Minh Long</congty>
+		<mota>Điện thoại</mota>
+		<soluong>45</soluong>
+	</hoadon>
+	<hoadon id="394">
+		<nguoilap>Lê Thanh Hưng</nguoilap>
+		<congty>Đông Nam</congty>
+		<mota>Hàng điện máy</mota>
+		<soluong>70</soluong>
+	</hoadon>
+		
+<hoadon id="111"><nguoilap>trường</nguoilap><congty>iuh</congty><mota>không co gì</mota><soluong>50</soluong></hoadon></dshoadon>

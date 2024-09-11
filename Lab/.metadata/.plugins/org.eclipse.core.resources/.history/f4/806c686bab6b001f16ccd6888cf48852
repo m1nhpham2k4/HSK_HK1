@@ -1,0 +1,76 @@
+package bai1;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
+public class processing extends JFrame implements ActionListener{
+
+	JLabel ltd, lmnv,lho,ltnv,ltuoi,lphai,ltien,lnhap;
+	JTextField tmnv, tho, ttnv, ttuoi,ttien,tnhap;
+	JRadioButton nu;
+	JButton tim, them, xoa,xoatrang,luu;
+	JPanel pNorth, pSouth,pCenter;
+	
+	
+	public processing() {
+		setSize(500,500);
+		
+		ltd = new JLabel("THÔNG TIN NHÂN VIÊN");
+		Font f = new Font(Font.SERIF, Font.BOLD, 20);
+		ltd.setForeground(Color.blue);
+		ltd.setFont(f);
+		pNorth = new JPanel();
+		pNorth.add(ltd);
+		add(pNorth, BorderLayout.CENTER);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		new processing();
+	}
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

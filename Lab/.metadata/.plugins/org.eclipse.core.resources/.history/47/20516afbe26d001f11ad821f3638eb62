@@ -1,0 +1,40 @@
+package bai1;
+
+import java.util.ArrayList;
+
+public class DanhSachNhanVien {
+    public ArrayList<ThongTinNhanVien> ds;
+
+    public DanhSachNhanVien(ArrayList<ThongTinNhanVien> ds) {
+        this.ds = ds;
+    }
+
+    public DanhSachNhanVien(String maNV, String ho, String ten, int tuoi, String phai, Double tien) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean them(ThongTinNhanVien ttnv) {
+        if (!ds.contains(ttnv)) {
+            ds.add(ttnv);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean xoa(String maNV) {
+        return ds.removeIf(nv -> nv.getMnv().equals(maNV));
+    }
+
+    public ThongTinNhanVien timKiem(String maNV) {
+        for (ThongTinNhanVien nv : ds) {
+            if (nv.getMnv().equals(maNV)) {
+                return nv;
+            }
+        }
+        return null;
+    }
+
+    public void luuDanhSach() {
+        // Giả sử lưu vào file hoặc database
+    }
+}
